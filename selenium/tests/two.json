@@ -1,0 +1,30 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.hnsearch.com/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "body-form-searchbox"
+      },
+      "text": "kittens"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='body-wrapper']/form/input[2]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "relevance"
+    }
+  ]
+}
