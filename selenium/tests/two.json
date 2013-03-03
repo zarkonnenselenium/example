@@ -24,7 +24,7 @@
     },
     {
       "type": "verifyTextPresent",
-      "text": "irrelevance"
+      "text": "relevance"
     }
   ]
 }
